@@ -1,0 +1,16 @@
+<div id="sidebar">
+  <input type="search" placeholder="Filter messages" ng-model="search.$" />
+  <ul id="emailListing">
+    <li ng-repeat="mail in (email.all|filter: search.$)" ng-click="showEmail(mail.id)"> 
+      <div class="container emailListing" ng-class="{'selected': isSelected(mail) }">
+        <div class="row">
+          <img class="small-4 columns" src="{{gravatarImageFor(mail.from[0])}}" />
+          <div class="small-8 columns from">{{mail.from.join(', ')}}</div>
+        </div>
+        <div class="row">
+          <div class="small-12 subject">{{mail.subject}}</div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,32 @@
+<form>
+  <fieldset>
+    <legend>Fieldset</legend>
+    <div class="row">
+      <div class="small-8 columns">
+        <label>Name</label>
+        <input type="text" placeholder="Name">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="small-6 columns">
+        <label>Email</label>
+        <input type="text" placeholder="Email">
+      </div>
+  
+      <div class="small-6 columns">
+        <label>Password</label>
+        <input type="text" placeholder="Email" ng-model="settings.password">
+        <span class="error" ng-show="settings.$error.required">Required!</span>
+        <span class="error" ng-show="settings.$error.url">Invalid URL format!</span>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="push-9 small-3">
+        <button ng-click="updateSettings()">Update</button>
+      </div>
+    </div>
+    
+  </fieldset>
+</form>
