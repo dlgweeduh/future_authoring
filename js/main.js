@@ -97,8 +97,16 @@ app.config(['$routeProvider', function($routeProvider) {
   .otherwise({redirect_to: '/'})
 }]);
 
+app.run(['$rootScope', function($rootScope) {
+  $rootScope.settings = {
+    email: "ari@fullstack.io",
+    name: "Ari",
+    password: "123456"
+  };
+}]);
+
 // Controllers
-app.controller('FrameController', 
+app.controller('HomeController', 
   ['$scope', '$location', 'mailService', 'keyboardService',
     function($scope, $location, mailService, keyboardService) {
       $scope.name = "Ari"
@@ -125,6 +133,10 @@ app.controller('FrameController',
         $scope.$apply(function() {
           $scope.loading = false;
         });
+      });
+      
+      $scope.$on('emailSelected', function(evt, mail) {
+        $location.path()
       });
         
       $scope.goHome = function() {
@@ -156,14 +168,9 @@ app.controller('FrameController',
       };
 }]);
 
-app.controller('HomeController',
-  ['$scope', '$routeParams', 'mailService', 
-    function($scope, $routeParams, mailService) {
-}]);
-
-app.controller('SettingsController', ['$scope', '$location', function($scope, $location) {
-  $scope.updateSettings = function() {
-    $location.path('/');
+app.controller('SettingsController', ['$scope', '$location', function($scope, $location) {  
+  $scope.update = function(settings) {
+    console.log("Updated settings ", settings);
   }
 }]);
 

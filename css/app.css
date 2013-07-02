@@ -1,8 +1,20 @@
 body {
 }
 
+.row { width: 100%;}
+.one, .row .one { width: 8.33333%; }    
+.two, .row .two { width: 16.66667%; }    
+.three, .row .three { width: 25%; }
+
+form input.ng-invalid.ng-dirty {
+  border-color: #FA787E;
+}
+
+form input.ng-valid.ng-dirty {
+  border-color: #78FA89;
+}
+
 ul {
-  
 }
 ul li {
   list-style-type: none;
@@ -39,6 +51,27 @@ ul li:hover {
 .emailListing .subject {
   font-size: 0.8em;
 }
+#sidebar {
+  clear: left;
+  float: left;
+  min-height: 300px;
+  width: 300px;
+  position: relative;
+  z-index: 1;
+}
+
+#sidebar ul {
+  border-bottom: 0;
+  border-left: 0;
+  border-top: 0;
+  height: 100%;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 0;
+  position: fixed;
+  width: inherit;
+}
+
 #sidebar .selected {
   background: #bbb;
 }
