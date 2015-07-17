@@ -70,8 +70,8 @@ app.controller('animateController', function($scope) {
 });
 
 
-var parts = document.getallElementsByClassName(".part")
-parts.getTime("time", "120");
+// var parts = document.getallElementsByClassName(".part")
+// parts.getTime("time", "120");
 
 
 
