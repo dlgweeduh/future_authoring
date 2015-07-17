@@ -1,114 +1,166 @@
+@font-face {
+  font-family: 'caecilia';
+  src: url("../fonts/caecilia.eot");
+  src: url("../fonts/caecilia.eot?#iefix") format("embedded-opentype"), url("../fonts/caecilia.woff") format("woff"), url("../fonts/caecilia.woff2") format("woff2"), url("../fonts/caecilia.ttf") format("truetype"), url("../fonts/caecilia.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'gothamLight';
+  src: url("../fonts/gothamLight.eot");
+  src: url("../fonts/gothamLight.eot?#iefix") format("embedded-opentype"), url("../fonts/gothamLight.woff") format("woff"), url("../fonts/gothamLight.woff2") format("woff2"), url("../fonts/gothamLight.ttf") format("truetype"), url("../fonts/gothamLight.svg#alex_brushregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'gothamBook';
+  src: url("../fonts/gothamBook.eot");
+  src: url("../fonts/gothamBook.eot?#iefix") format("embedded-opentype"), url("../fonts/gothamBook.woff") format("woff"), url("../fonts/gothamBook.woff2") format("woff2"), url("../fonts/gothamBook.ttf") format("truetype"), url("../fonts/gothamBook.svg#alex_brushregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 body {
-}
+  background-color: #f8f8f8; }
 
-.row { width: 100%;}
-.one, .row .one { width: 8.33333%; }    
-.two, .row .two { width: 16.66667%; }    
-.three, .row .three { width: 25%; }
-
-form input.ng-invalid.ng-dirty {
-  border-color: #FA787E;
-}
-
-form input.ng-valid.ng-dirty {
-  border-color: #78FA89;
-}
-
-ul {
-}
-ul li {
-  list-style-type: none;
-}
-ul li:hover {
-  background: #eee;
-}
-#accountlisting {
-  background: #999;
-  -moz-border-radius: 15px;
-  border-radius: 3px;
-}
-#emailListing {
-  margin-top: 20px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-#email {
-}
-.emailListing {
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  height: 120px;
-  overflow: hidden;
-  padding: 13px;
-}
-.emailListing img {
-}
-.emailListing .date {
-  font-size: 0.5em;
-  color: blue;
-  display: none;
-}
-.emailListing .subject {
-  font-size: 0.8em;
-}
-#sidebar {
-  clear: left;
-  float: left;
-  min-height: 300px;
-  width: 300px;
-  position: relative;
-  z-index: 1;
-}
-
-#sidebar ul {
-  border-bottom: 0;
-  border-left: 0;
-  border-top: 0;
-  height: 100%;
-  margin: 0;
-  overflow-y: scroll;
-  padding: 0;
+.left_aside {
+  font-family: "caecilia", sans-serif;
   position: fixed;
-  width: inherit;
-}
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  background-color: #f8f8f8;
+  border-right: 1px solid #f1f1f1;
+  padding-right: 3px; }
 
-#sidebar .selected {
-  background: #bbb;
-}
-.email {
-  margin-left: 20px;
-}
-.email .header {
-  background: #eee;
-  padding: 10px;
-}
-.email .actions {
-  padding: 5px 0;
-}
-.email .body {
-  padding: 10px 0;
-  border-top: 1px solid #999;
-}
-#composeView {
-  border: 1px solid #555;
-  background: #fff;
-  padding: 0;
+.right_aside {
   position: fixed;
-  bottom: 0px;
-  right: 30px;
-}
-#composeView #title {
-  background: #000;
-  color: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  background-color: #f8f8f8;
+  border-left: 1px solid #f1f1f1;
+  padding-left: 3px; }
+
+.left_nav .icon_wrap {
+  border-radius: 50%;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #f1f1f1;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+.left_nav img {
+  height: 25px;
+  margin: 7px; }
+.left_nav ul {
+  margin-left: 5px;
+  padding: 0; }
+
+.right_nav .icon_wrap {
+  border-radius: 50%;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #f1f1f1;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+.right_nav img {
+  height: 25px;
+  margin: 7px; }
+.right_nav ul {
+  margin-right: 25px;
+  padding: 0; }
+
+.stats {
+  font-family: "caecilia", sans-serif;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  padding: 10px;
-}
+  background-color: #f8f8f8;
+  border-top: 1px solid #f1f1f1;
+  height: 30px; }
 
-form#composeView input, form#composeView textarea {
-  margin: 0px;
+.stats_wrap {
+  margin: 5px 200px; }
+
+.time_count {
+  text-align: left;
+  display: inline-block; }
+
+.character_count {
+  float: right;
+  display: inline-block; }
+
+section.part {
+  width: 600px;
+  margin: 200px auto; }
+
+.i_name {
+  font-family: "caecilia", sans-serif;
+  margin-top: 20px;
+  font-size: 2em; }
+
+.i_body {
+  font-family: "gothamLight", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px; }
+
+.main_text {
+  margin: 100px; }
+
+.animate-hide {
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  line-height: 20px;
+  opacity: 1;
   padding: 10px;
-  border: 0;
-}
-form#composeView textarea {
-  height: 200px;
-}
+  background: white; }
+
+.animate-hide.ng-hide {
+  line-height: 0;
+  opacity: 0;
+  padding: 0 10px; }
+
+textarea {
+  font-family: "gothamLight", sans-serif;
+  font-size: 1em;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+  padding: 10px; }
+  textarea:hover, textarea:focus, textarea:visited, textarea:active {
+    border: none;
+    padding: 0; }
+  textarea input:focus {
+    outline: none !important;
+    border: none;
+    box-shadow: 0 0 0 #fff; }
+
+.move_buttons {
+  position: fixed;
+  bottom: 75px;
+  right: 100px;
+  width: 100px;
+  height: 150px; }
+  .move_buttons img {
+    -webkit-filter: drop-shadow(0px 0px 0.3px #f1f1f1);
+    filter: drop-shadow(0px 0px 0.3px #f1f1f1); }
+  .move_buttons .save_button {
+    float: left;
+    margin-top: 60px;
+    cursor: pointer; }
+  .move_buttons .up_button, .move_buttons .down_button {
+    position: absolute;
+    right: 0;
+    cursor: pointer; }
+  .move_buttons img {
+    height: 30px;
+    display: block; }
+  .move_buttons .up_button {
+    top: 0; }
+  .move_buttons .down_button {
+    bottom: 0; }
+
+/*# sourceMappingURL=app.css.map */

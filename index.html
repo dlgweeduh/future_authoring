@@ -1,76 +1,56 @@
 <!DOCTYPE html>
-<html ng-app="plusApp">
+<html ng-app="authoringApp">
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Demo app</title>
-  
-  <link rel="stylesheet" href="css/foundation.min.css" />
-  <link rel="stylesheet" href="css/app.css" />
+  <title>Future Authoring</title>
+
+<link rel="stylesheet" href="css/app.css" />
+
 </head>
 <body>
-    
-  <div ng-controller="HomeController">    
-    <nav class="top-bar">
-      <ul class="title-area">
+<div ng-controller="HomeController">    
+  <aside class="left_aside">
+    <!-- <div><h1>Left</h1></div> -->
+    <nav class="left_nav">
+      <ul class="">
         <!-- Title Area -->
-        <li class="name">
-          <h1><a>Mail</a></h1>
-        </li>
+        <a href="#/">
+        <div class="icon_wrap"> 
+          <img src="images/logo.png">
+        </div><!-- -/ icon_wrap - -->
+        </a>
       </ul>
+    </nav>    
+  </aside><!-- -/left_aside - -->
 
-      <section class="top-bar-section">
-        <ul class="right">
-          <li ng-show="loading"><img src="images/spinner_32.gif"></li>
-          <li><a href="#/"><img src="images/home.gif"/></a></li>
-          <li><a href="#/settings"><img src="images/settings.gif"/></a></li>
-        </ul>
-      </section>
-    </nav>
-    
-    <div class="container">
-      <div ng-view></div>
-    </div>
+  <div ng-view></div>
 
-    <div class="contain-to-grid">
-      <form id="composeView" ng-show="shouldShowComposeView" class="large-4" ng-submit="composeNewEmail()">
-  
-        <div id="title" class="row">
-          <div class="large-12">New message</div>
-        </div>
-  
-        <div class="row">
-          <div class="small-2 columns">
-            <label for="right-label" class="right inline">To</label>
-          </div>
-          <div class="small-10 columns">
-            <input type="text" id="right-label" ng-model="newEmail.recipients" placeholder=""></input>
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="large-12 columns">
-            <input type="text" id="right-label" ng-model="newEmail.subject" placeholder="Subject"></input>
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="large-12 columns">
-            <textarea type="text" ng-model="newEmail.body" id="right-label" placeholder=""></textarea>
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="large-12 columns">
-            <button ng-click="sendMessage()" class="button radius">Send</button>
-            <button ng-click="cancelMessage()" class="button radius alert">Cancel</button>
-          </div>
-        </div>
-  
-      </form>
-    </div>
-  </div>
-      
-  <script src="js/vendor/angular.min.js"></script>
+  <aside class="right_aside">
+    <div></div>
+    <nav class="right_nav">
+      <ul class="">
+        <!-- Title Area -->
+        <a href="#/">
+        <div class="icon_wrap"> 
+          <img src="images/index.png">
+        </div><!-- -/ icon_wrap - -->
+        </a>        
+        <a href="#/settings">
+        <div class="icon_wrap"> 
+          <img src="images/settings.png">
+        </a>        
+        </div><!-- -/ icon_wrap - -->
+      </ul>
+    </nav>    
+  </aside><!-- -/left_aside - -->
+
+</div>
+
+  <script src="js/vendor/angular.js"></script>
+  <script src="js/vendor/angular-route.js"></script>  
+  <script src="js/vendor/angular-messages.js"></script>  
+  <script src="js/vendor/angular-animate.js"></script>  
+
   <script src="js/main.js"></script>
 </body>
 </html>
