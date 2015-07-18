@@ -13,7 +13,7 @@ body { background-color: #f8f8f8;}
 .right_nav { .icon_wrap { border-radius: 50%;background-color: white; height: 40px; width: 40px; border: 1px solid #f1f1f1; margin-top: 5px; margin-bottom:5px;} img { height: 25px; margin: 7px; } ul {margin-right: 25px; padding: 0;}}
 
 
-.stats { font-family: $typeface; position: fixed; bottom: 0; left: 0; width: 100%; background-color:#f8f8f8; border-top: 1px solid #f1f1f1; height: 30px; }
+.stats { font-family: $typeface; position: fixed; bottom: 0; left: 0; width: 100%; background-color:#f8f8f8; border-top: 1px solid #f1f1f1; height: 40px; }
 .stats_wrap { margin: 5px 200px; }
 .time_count { font-size: 1.2em; text-align: left; display: inline-block; }
 .character_count { font-size: 1.2em; float: right; display: inline-block; }
@@ -29,7 +29,8 @@ section.part { width: 600px; margin: 200px auto;}
 .i_vids {}
 .i_body { font-family: $lightFont; margin-top: 20px; margin-bottom: 20px; padding: 10px;}
 .i_time {}
-.summary_wrap { width: 600px; .i_name { font-size: 1.5em; font-family:$typeface2; } p{ padding: 10px 0 10px 10px; font-family: $lightFont; }}
+.summary_wrap { width: 600px; .i_name { font-size: 1.5em; font-family:$typeface2; } p{ padding: 15px 0 15px 15px; font-family: $lightFont; background-color: white; } }
+hr.style_one { border: 0; height: 1px; background: $c1a;}
 
 .main_text { margin: 100px;  }
 
