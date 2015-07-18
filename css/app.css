@@ -5,6 +5,11 @@
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: 'caeciliaItalic';
+  src: url("../fonts/caeciliaItalic.eot");
+  src: url("../fonts/caeciliaItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/caeciliaItalic.woff") format("woff"), url("../fonts/caeciliaItalic.woff2") format("woff2"), url("../fonts/caeciliaItalic.ttf") format("truetype"), url("../fonts/caeciliaItalic.svg") format("svg");
+  font-weight: normal; }
+@font-face {
   font-family: 'gothamLight';
   src: url("../fonts/gothamLight.eot");
   src: url("../fonts/gothamLight.eot?#iefix") format("embedded-opentype"), url("../fonts/gothamLight.woff") format("woff"), url("../fonts/gothamLight.woff2") format("woff2"), url("../fonts/gothamLight.ttf") format("truetype"), url("../fonts/gothamLight.svg#alex_brushregular") format("svg");
@@ -84,10 +89,12 @@ body {
   margin: 5px 200px; }
 
 .time_count {
+  font-size: 1.2em;
   text-align: left;
   display: inline-block; }
 
 .character_count {
+  font-size: 1.2em;
   float: right;
   display: inline-block; }
 
@@ -106,21 +113,17 @@ section.part {
   margin-bottom: 20px;
   padding: 10px; }
 
+.summary_wrap {
+  width: 600px; }
+  .summary_wrap .i_name {
+    font-size: 1.5em;
+    font-family: "caeciliaItalic", sans-serif; }
+  .summary_wrap p {
+    padding: 10px 0 10px 10px;
+    font-family: "gothamLight", sans-serif; }
+
 .main_text {
   margin: 100px; }
-
-.animate-hide {
-  -webkit-transition: all linear 0.2s;
-  transition: all linear 0.2s;
-  line-height: 20px;
-  opacity: 1;
-  padding: 10px;
-  background: white; }
-
-.animate-hide.ng-hide {
-  line-height: 0;
-  opacity: 0;
-  padding: 0 10px; }
 
 textarea {
   font-family: "gothamLight", sans-serif;
@@ -129,10 +132,9 @@ textarea {
   height: 100%;
   display: block;
   border: none;
-  padding: 10px; }
+  padding: 20px; }
   textarea:hover, textarea:focus, textarea:visited, textarea:active {
-    border: none;
-    padding: 0; }
+    border: none; }
   textarea input:focus {
     outline: none !important;
     border: none;

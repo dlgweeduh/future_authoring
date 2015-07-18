@@ -13,19 +13,19 @@ app.config(['$routeProvider', function($routeProvider) {
   })
   .otherwise({redirect_to: '/'})
 }]);
-app.factory('user_db', function(){
-  return {
-    data: {
-      i1_1: '',
-      i1_2: '',
-      i1_3: '',
-      i1_4: '',
-      i1_5: '',
-      i1_9: '',
-      i1_10: '',
-    }
-  }
-})
+// app.factory('user_db', function(){
+//   return {
+//     data: {
+//       i1_1: '',
+//       i1_2: '',
+//       i1_3: '',
+//       i1_4: '',
+//       i1_5: '',
+//       i1_9: '',
+//       i1_10: '',
+//     }
+//   }
+// })
 
 
 // Controllers
@@ -36,11 +36,10 @@ app.controller('HomeController',
       $scope.message = '';
 }]);
 
-app.controller('PartOneController', ['$scope', 'user_db', function($scope, user_db) {
-  $scope.name= "David";
+// app.controller('PartOneController', ['$scope', 'user_db', function($scope, user_db) {
+app.controller('PartOneController', ['$scope', function($scope) {  
 
   $scope.i1_1 = '';
-
   $scope.i1_2 = '';
   $scope.i1_3 = '';
   $scope.i1_4 = '';
@@ -54,6 +53,7 @@ app.controller('PartOneController', ['$scope', 'user_db', function($scope, user_
   // $scope.i1_5 = user_db.data.i1_5;
   // $scope.i1_9 = user_db.data.i1_9;
   // $scope.i1_10 = user_db.data.i1_10;
+
 
   // $scope.selected_i = $scope.i1_1;
 }]);
