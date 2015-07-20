@@ -8,7 +8,7 @@
   font-family: 'caeciliaItalic';
   src: url("../fonts/caeciliaItalic.eot");
   src: url("../fonts/caeciliaItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/caeciliaItalic.woff") format("woff"), url("../fonts/caeciliaItalic.woff2") format("woff2"), url("../fonts/caeciliaItalic.ttf") format("truetype"), url("../fonts/caeciliaItalic.svg") format("svg");
-  font-weight: normal; }
+  font-weight: thin; }
 @font-face {
   font-family: 'gothamLight';
   src: url("../fonts/gothamLight.eot");
@@ -188,6 +188,9 @@
 .icon-characters2:before {
   content: "\e624"; }
 
+a {
+  text-decoration: none; }
+
 .icons {
   color: #212121; }
   .icons.dark {
@@ -337,8 +340,10 @@ section.part {
 .dotstyle ul {
   position: relative;
   display: inline-block;
-  padding: 5px;
+  padding: 2px;
   margin-left: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
   cursor: default;
   -webkit-touch-callout: none;
@@ -348,13 +353,17 @@ section.part {
   -ms-user-select: none;
   user-select: none; }
 
+.stage_number {
+  display: inline-block;
+  padding-left: 25px; }
+
 .dotstyle li {
   position: relative;
   display: block;
   float: left;
   margin: 0 16px;
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   cursor: pointer; }
 
 .dotstyle li a {
@@ -375,11 +384,12 @@ section.part {
   outline: none; }
 
 .dotstyle-tooltip li {
-  border: 2px solid #A5D6A7;
+  border: 2px solid #C8E6C9;
   border-radius: 50%;
   z-index: 1;
   -webkit-transition: border-color 0.3s ease;
-  transition: border-color 0.3s ease; }
+  transition: border-color 0.3s ease;
+  margin-top: 0.2em; }
 
 .dotstyle-tooltip li a {
   top: auto;
@@ -393,7 +403,7 @@ section.part {
   margin-left: 15px;
   height: auto;
   border-radius: 0;
-  background-color: #A5D6A7;
+  background-color: #C8E6C9;
   color: #fff;
   text-indent: 0;
   line-height: 2;
@@ -413,7 +423,7 @@ section.part {
   border: solid transparent;
   border-width: 10px;
   border-color: transparent;
-  border-top-color: #A5D6A7;
+  border-top-color: #C8E6C9;
   content: '';
   pointer-events: none;
   top: 99%;
@@ -449,6 +459,11 @@ section.part {
   margin-top: 20px;
   font-size: 2em;
   color: #212121; }
+  .i_name span {
+    color: #37b34a; }
+  .i_name .icon-check {
+    font-size: 1.8em;
+    color: #EEEEEE; }
 
 .i_body {
   font-family: "gothamLight", sans-serif;
@@ -520,7 +535,7 @@ textarea {
   width: 100px;
   height: 150px; }
   .move_buttons .icons {
-    color: #37b34a;
+    color: #A5D6A7;
     text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.26); }
   .move_buttons .save_button {
     float: left;
@@ -553,8 +568,6 @@ textarea {
     opacity: 0;
     transition: 0.2s opacity;
     /* HOVER */ }
-    #sub .circle .icons {
-      background-color: #EEEEEE; }
     #sub .circle:nth-child(1) {
       top: 60px; }
     #sub .circle:nth-child(2) {

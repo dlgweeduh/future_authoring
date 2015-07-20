@@ -12,7 +12,7 @@ app.config(['$routeProvider', function($routeProvider) {
     controller: "SettingsController"
   })
   .when('/part_two', {
-    templateUrl: "templates/part_one.html",
+    templateUrl: "templates/part_two.html",
     controller: "PartTwoController"
   })
   .otherwise({redirect_to: '/'})
@@ -63,6 +63,12 @@ app.controller('PartOneController', ['$scope', function($scope) {
 }]);
 
 
+app.controller('PartTwoController', ['$scope', function($scope) {  
+
+
+}]);
+
+
 app.controller('SettingsController', ['$scope', function($scope) {  
 
 }]);
@@ -77,10 +83,6 @@ app.controller('animateController', function($scope) {
 // var parts = document.getallElementsByClassName(".part")
 // parts.getTime("time", "120");
 
-app.controller('PartTwoController', ['$scope', function($scope) {  
-
-
-}]);
 
 
 app.directive('time', function() {
