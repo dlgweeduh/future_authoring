@@ -333,6 +333,9 @@ hr.style_one {
 .main_text {
   margin: 100px; }
 
+.user_body form textarea:focus, .user_body form input:focus {
+  outline: none; }
+
 textarea {
   font-family: "gothamLight", sans-serif;
   font-size: 1em;
@@ -341,12 +344,6 @@ textarea {
   display: block;
   border: none;
   padding: 20px; }
-  textarea:hover, textarea:focus, textarea:visited, textarea:active {
-    border: none; }
-  textarea input:focus {
-    outline: none !important;
-    border: none;
-    box-shadow: 0 0 0 #fff; }
 
 .move_buttons {
   position: fixed;
