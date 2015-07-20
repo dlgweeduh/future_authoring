@@ -1,0 +1,136 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-ttfzoe');
+	src:url('../fonts/icomoon.eot?#iefix-ttfzoe') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?-ttfzoe') format('truetype'),
+		url('../fonts/icomoon.woff?-ttfzoe') format('woff'),
+		url('../fonts/icomoon.svg?-ttfzoe#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-time2:before {
+	content: "\e600";
+}
+.icon-add:before {
+	content: "\e601";
+}
+.icon-background:before {
+	content: "\e602";
+}
+.icon-background2:before {
+	content: "\e603";
+}
+.icon-calendar:before {
+	content: "\e604";
+}
+.icon-cartAdd:before {
+	content: "\e605";
+}
+.icon-cartRemove:before {
+	content: "\e606";
+}
+.icon-characters:before {
+	content: "\e607";
+}
+.icon-check:before {
+	content: "\e608";
+}
+.icon-downArrow:before {
+	content: "\e609";
+}
+.icon-folder:before {
+	content: "\e60a";
+}
+.icon-font:before {
+	content: "\e60b";
+}
+.icon-fullsize:before {
+	content: "\e60c";
+}
+.icon-help:before {
+	content: "\e60d";
+}
+.icon-hierarchy:before {
+	content: "\e60e";
+}
+.icon-index:before {
+	content: "\e60f";
+}
+.icon-index2:before {
+	content: "\e610";
+}
+.icon-keyboard:before {
+	content: "\e611";
+}
+.icon-lock:before {
+	content: "\e612";
+}
+.icon-login:before {
+	content: "\e613";
+}
+.icon-logo:before {
+	content: "\e614";
+}
+.icon-nav:before {
+	content: "\e615";
+}
+.icon-progress:before {
+	content: "\e616";
+}
+.icon-question:before {
+	content: "\e617";
+}
+.icon-quoteL:before {
+	content: "\e618";
+}
+.icon-quoteR:before {
+	content: "\e619";
+}
+.icon-save:before {
+	content: "\e61a";
+}
+.icon-settings:before {
+	content: "\e61b";
+}
+.icon-star:before {
+	content: "\e61c";
+}
+.icon-subtract:before {
+	content: "\e61d";
+}
+.icon-text:before {
+	content: "\e61e";
+}
+.icon-time:before {
+	content: "\e61f";
+}
+.icon-uncheck:before {
+	content: "\e620";
+}
+.icon-upArrow:before {
+	content: "\e621";
+}
+.icon-user:before {
+	content: "\e622";
+}
+.icon-video:before {
+	content: "\e623";
+}
+.icon-characters2:before {
+	content: "\e624";
+}

@@ -5,53 +5,67 @@
   <title>Self Authoring | Future</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="css/app.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="css/icons.css" />
+<script src="js/modernizr.custom.js"></script>
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
 
 </head>
 <body>
 <div ng-controller="HomeController">    
-  <aside class="left_aside">
-    <!-- <div><h1>Left</h1></div> -->
+  <aside class="aside left">
     <nav class="left_nav">
-      <ul class="">
         <!-- Title Area -->
-        <a href="#/">
-        <div class="icon_wrap"> 
-          <img src="images/logo.png">
-        </div><!-- -/ icon_wrap - -->
-        </a>
-      </ul>
+      <div class="icons-container">
+        <div class="icons-wrap icons-effect-2 icons-effect-2a">
+          <a class="icons icon-logo"></a>
+        </div><!-- -/ icons-wrap - -->
+      </div><!-- -/ icons-container - -->
     </nav>    
   </aside><!-- -/left_aside - -->
 
   <div ng-view></div>
 
-  <aside class="right_aside">
-    <div></div>
+  <aside class="aside right">
     <nav class="right_nav">
-      <ul class="">
         <!-- Title Area -->
-        <a href="#/">
-        <div class="icon_wrap"> 
-          <img src="images/user.png">
-        </div><!-- -/ icon_wrap - -->
-        </a>        
-        <a href="#/settings">
-        <div class="icon_wrap"> 
-          <img src="images/settings.png">
-        </a>        
-        </div><!-- -/ icon_wrap - -->
-      </ul>
+      <div class="icons-container">
+        <div class="icons-wrap icons-effect-2 icons-effect-2a">
+          <a class="icons icon-user"></a>
+        </div><!-- -/ icons-wrap - -->
+      </div><!-- -/ icons-container - -->
+      <div class="icons-container">
+        <div class="icons-wrap icons-effect-2 icons-effect-2a">
+          <a class="icons icon-settings"></a>
+        </div><!-- -/ icons-wrap - -->
+      </div><!-- -/ icons-container - -->      
     </nav>    
   </aside><!-- -/left_aside - -->
 
 </div>
 
 <div class="move_buttons">  
-  <div class="up_button"><img src="images/upArrow.png"></div>
-  <div class="save_button"><img src="images/save.png"></div>  
-  <div class="down_button"><img src="images/downArrow.png"></div>
-</div>
+  <div class="up_button">    
+      <div class="icons-container">
+        <div class="icons-wrap">
+          <a class="icons icon-upArrow"></a>
+        </div><!-- -/ icons-wrap - -->
+      </div><!-- -/ icons-container - -->   
+  </div><!-- -/up_button - -->
+  <div class="save_button">
+      <div class="icons-container">
+        <div class="">
+          <a class="icons icon-save"></a>
+        </div><!-- -/ icons-wrap - -->
+      </div><!-- -/ icons-container - -->       
+  </div><!-- -/save_button - -->
+  <div class="down_button">
+      <div class="icons-container">
+        <div class="icons-wrap">
+          <a class="icons icon-downArrow"></a>
+        </div><!-- -/ icons-wrap - -->
+      </div><!-- -/ icons-container - -->       
+  </div><!-- -/down_button - -->
+</div><!-- -/move_buttons - -->
 
   <script src="js/vendor/angular.js"></script>
   <script src="js/vendor/angular-route.js"></script>  
