@@ -11,6 +11,10 @@ app.config(['$routeProvider', function($routeProvider) {
     templateUrl: "templates/settings.html",
     controller: "SettingsController"
   })
+  .when('/part_two', {
+    templateUrl: "templates/part_one.html",
+    controller: "PartTwoController"
+  })
   .otherwise({redirect_to: '/'})
 }]);
 // app.factory('user_db', function(){
@@ -73,6 +77,10 @@ app.controller('animateController', function($scope) {
 // var parts = document.getallElementsByClassName(".part")
 // parts.getTime("time", "120");
 
+app.controller('PartTwoController', ['$scope', function($scope) {  
+
+
+}]);
 
 
 app.directive('time', function() {
