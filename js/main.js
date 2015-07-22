@@ -5,7 +5,7 @@ app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
   .when('/', {
     templateUrl: "templates/part_one.html",
-    controller: "PartOneController"
+    controller: "PartController"
   })
   .when('/settings', {
     templateUrl: "templates/settings.html",
@@ -13,7 +13,11 @@ app.config(['$routeProvider', function($routeProvider) {
   })
   .when('/part_two', {
     templateUrl: "templates/part_two.html",
-    controller: "PartTwoController"
+    controller: "PartController"
+  })
+  .when('/stage2', {
+    templateUrl: "templates/settings.html",
+    controller: "SettingsController"
   })
   .otherwise({redirect_to: '/'})
 }]);
@@ -40,8 +44,8 @@ app.controller('HomeController',
       $scope.message = '';
 }]);
 
-// app.controller('PartOneController', ['$scope', 'user_db', function($scope, user_db) {
-app.controller('PartOneController', ['$scope', function($scope) {  
+// app.controller('PartController', ['$scope', 'user_db', function($scope, user_db) {
+app.controller('PartController', ['$scope', function($scope) {  
 
   $scope.i1_1 = '';
   $scope.i1_2 = '';
@@ -58,15 +62,18 @@ app.controller('PartOneController', ['$scope', function($scope) {
   // $scope.i1_9 = user_db.data.i1_9;
   // $scope.i1_10 = user_db.data.i1_10;
 
-
   // $scope.selected_i = $scope.i1_1;
+
+  // $scope.current_part = 'one';
+
+  // $scope.nextPart = function () = {
+  //   $scope.current_part = 'two';
+
+  // };
+
 }]);
 
 
-app.controller('PartTwoController', ['$scope', function($scope) {  
-
-
-}]);
 
 
 app.controller('SettingsController', ['$scope', function($scope) {  
